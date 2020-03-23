@@ -29,11 +29,10 @@ INSERT INTO people (name) VALUES ('Crusty the Clown');
 INSERT INTO people (name) VALUES ('Montgomery Burns');
 INSERT INTO people (name) VALUES ('Mayor Joe Quimby');
 INSERT INTO people (name) VALUES ('Groundskeeper Willie');
-
-
 -- Oops! Someone spelled Krusty The Clown’s name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
 UPDATE people SET name = 'Krusty The Clown' WHERE name = 'Crusty the Clown';
-
+-- We forgot one of the main characters! Add Bart Simpson to the ‘people’ table
+INSERT INTO people (name) VALUES ('Bart Simpson');
 
 
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:00');
@@ -67,7 +66,6 @@ SELECT name FROM people;
 SELECT name FROM people WHERE name = 'Homer Simpson';
 
 
--- We forgot one of the main characters! Add Bart Simpson to the ‘people’ table
 -- Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
 -- The cinema has just heard that they will be holding an exclusive midnight showing of ‘Avengers: Infinity War’!! Create a new entry in the ‘movies’ table to reflect this.
 -- The cinema would like to make the Iron Man movies a triple billing. Find out the show time of “Iron Man 2” and set the show time of “Iron Man 3” to start two hours later.
