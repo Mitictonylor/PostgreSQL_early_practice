@@ -56,6 +56,8 @@ INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 20
 INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '22:10');
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:00');
 
+-- The cinema is showing ‘Batman Begins’, but Batman is DC, not Marvel! Delete the entry from the ‘movies’ table.
+DELETE FROM movies WHERE title = 'Batman Begins';
 
 -- Return ALL the data in the ‘movies’ table.
 SELECT * FROM movies;
@@ -65,7 +67,6 @@ SELECT name FROM people;
 SELECT name FROM people WHERE name = 'Homer Simpson';
 
 
--- The cinema is showing ‘Batman Begins’, but Batman is DC, not Marvel! Delete the entry from the ‘movies’ table.
 -- We forgot one of the main characters! Add Bart Simpson to the ‘people’ table
 -- Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
 -- The cinema has just heard that they will be holding an exclusive midnight showing of ‘Avengers: Infinity War’!! Create a new entry in the ‘movies’ table to reflect this.
