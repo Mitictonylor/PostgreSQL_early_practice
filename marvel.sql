@@ -30,9 +30,9 @@ INSERT INTO people (name) VALUES ('Montgomery Burns');
 INSERT INTO people (name) VALUES ('Mayor Joe Quimby');
 INSERT INTO people (name) VALUES ('Groundskeeper Willie');
 
+
 -- Oops! Someone spelled Krusty The Clown’s name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
 UPDATE people SET name = 'Krusty The Clown' WHERE name = 'Crusty the Clown';
-
 
 
 
@@ -61,9 +61,9 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 SELECT * FROM movies;
 -- Return ONLY the name column from the ‘people’ table
 SELECT name FROM people;
-
-
 -- Return ONLY Homer Simpson’s name from the ‘people’ table.
+SELECT name FROM people WHERE name = 'Homer Simpson';
+
 
 -- The cinema is showing ‘Batman Begins’, but Batman is DC, not Marvel! Delete the entry from the ‘movies’ table.
 -- We forgot one of the main characters! Add Bart Simpson to the ‘people’ table
