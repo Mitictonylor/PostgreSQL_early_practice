@@ -57,6 +57,8 @@ SELECT * FROM movies;
 -- Return ONLY the name column from the ‘people’ table
 SELECT name FROM people;
 -- Oops! Someone spelled Krusty The Clown’s name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
+UPDATE people SET (name) = ('Krusty The Clown') WHERE name = 'Crusty the Clown';
+
 -- Return ONLY Homer Simpson’s name from the ‘people’ table.
 -- The cinema is showing ‘Batman Begins’, but Batman is DC, not Marvel! Delete the entry from the ‘movies’ table.
 -- We forgot one of the main characters! Add Bart Simpson to the ‘people’ table
