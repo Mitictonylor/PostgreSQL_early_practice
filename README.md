@@ -1,7 +1,7 @@
 PostgreSQL practice
 Codeclan week3 day1
 
-#SQL Homework
+# SQL Homework
 
 **BRIEF**
 
